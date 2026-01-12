@@ -1,0 +1,29 @@
+{
+    "hosting": {
+      "public": "build/web",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    "flutter": {
+      "platforms": {
+        "dart": {
+          "lib/firebase_options.dart": {
+            "projectId": "smartwatts-01",
+            "configurations": {
+              "web": "1:596079485340:web:7e2becc0d85a17df7ca859"
+            }
+          }
+        }
+      }
+    }
+  }
+  
